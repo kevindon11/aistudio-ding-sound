@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "AI Studio Finish Notifier",
+  "version": "1.1",
+  "description": "Plays a sound when Google AI Studio finishes generating.",
+  "content_scripts": [
+    {
+      "matches": ["https://aistudio.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["coin.mp3"],
+      "matches": ["https://aistudio.google.com/*"]
+    }
+  ]
+}
